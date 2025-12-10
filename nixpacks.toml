@@ -1,15 +1,8 @@
 [phases.setup]
 nixPkgs = [
   "php82",
-  "php82extensions.gd",
-  "php82extensions.curl",
-  "php82extensions.mbstring",
-  "php82extensions.pdo",
-  "php82extensions.pdo_mysql"
+  "php82extensions.gd"
 ]
 
-[phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
-
 [start]
-cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
+cmd = "php -v"
