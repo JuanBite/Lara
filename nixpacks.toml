@@ -7,7 +7,7 @@ nixPkgs = [
   "phpExtensions.mbstring",
   "phpExtensions.pdo",
   "phpExtensions.pdo_mysql",
-  "nodejs-20" 
+  "nodejs" 
 ]
 
 [phases.install]
